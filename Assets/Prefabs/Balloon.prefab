@@ -113,6 +113,7 @@ MonoBehaviour:
   height: 0.2
   segments: 64
   taper: 0.25
+  letter: {fileID: 7872510332404565923}
 --- !u!60 &7653240961046168519
 PolygonCollider2D:
   m_ObjectHideFlags: 0
