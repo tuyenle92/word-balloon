@@ -42,7 +42,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _CloudDensity: 1
-    - _EdgeSoftness: 0.01
+    - _EdgeSoftness: 0.0427
     - _EnableExternalAlpha: 0
     - _ZWrite: 0
     m_Colors:
