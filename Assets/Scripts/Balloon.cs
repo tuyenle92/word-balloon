@@ -53,8 +53,7 @@ public class Balloon : MonoBehaviour
     {
         if (!isPopped)
             return;
-
-        Destroy(gameObject.transform);
+        
         elapsedTime += Time.deltaTime;
         float t = elapsedTime;
         Mesh mesh = meshFilter.mesh;
