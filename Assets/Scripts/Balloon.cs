@@ -9,12 +9,13 @@ public class Balloon : MonoBehaviour
     public float height = 0.20f;
     public int segments = 64;
     public float taper = 0.25f;
+    [SerializeField] private GameObject letter;
     private PolygonCollider2D polygonCollider2D;
     private MeshFilter meshFilter;
     private Vector3[] animatedVertices;
     private float elapsedTime = 0f;
     private bool isPopped = false;
-    private float popDuration = 3f;
+    private float popDuration = 0.5f;
     private Fragment[] fragments;
     private struct Fragment
     {
@@ -53,6 +54,8 @@ public class Balloon : MonoBehaviour
     {
         if (!isPopped)
             return;
+
+        Destroy(letter);
         
         elapsedTime += Time.deltaTime;
         float t = elapsedTime;
